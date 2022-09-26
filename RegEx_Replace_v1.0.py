@@ -1,13 +1,8 @@
 #!/usr/bin/python3.6.4
 #!coding:utf-8
 """
-作者: IIE
-版本: 1.0
-功能：能够对单个或者多个文件，进行多次正则替换，并保存在同一路径下的result文件夹中。
-运行方式：
-[1]python3 RegEx_Replace.py -f target.txt
-[2]把所有需要进行正则替换的文件放置在同目录下，并命名1个TXT
-python3 RegEx_Replace.py -l list.txts
+Author: IIE
+Version: 1.0
 """
 import re
 import os
@@ -67,13 +62,10 @@ def ZC_Replace(content):
         param1 = re.sub('^"|"( =|=)', '', param1)
         param2 = re.search('(= |=)".*"$', line).group()
         param2 = re.sub('(= |=)"|"$', '', param2)
-        #print(param1)
-        #新建文本，替换content
         content = re.sub(param1, param2, content)
     return content
 
 
     
 if __name__ == "__main__":
-    #目的是打开TXT文本，识别匹配规则。打开文件，进行替换操作
     Parser()
