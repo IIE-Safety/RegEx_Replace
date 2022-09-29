@@ -1,8 +1,8 @@
 #!/usr/bin/python3.6.4
 #!coding:utf-8
 """
-Author: IIE
-Version: 1.0
+Author: IIE_Safety
+Version: 1.0.0
 """
 import re
 import os
