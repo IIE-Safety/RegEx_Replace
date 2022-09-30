@@ -1,8 +1,9 @@
 import os
 
+current_path = os.getcwd()
+current_path_result = current_path + "\\" +"result" + "\\"
+
 def _result(filename):
-    current_path = os.getcwd()
-    current_path_result = current_path + "\\" +"result" + "\\"
     setDir(current_path_result)
     filename = Path_Check(filename)
     New_filename = current_path_result + filename
