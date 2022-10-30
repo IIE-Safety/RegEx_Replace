@@ -5,7 +5,11 @@
 
 ## 运行
 ```
-***务必记得在config.ini中配置正则替换规则***
+*****务必记得在config.ini中配置正则替换规则*****
+例如：
+"param1" = "param2" #param1 ==替换为==> param2
+"param3" = "param4" #param3 ==替换为==> param4
+**********************************************
 python3 RegEx_Replace_v1.0.2.py  --target Test.txt  replace   #单个正则替换
 python3 RegEx_Replace_v1.0.2.py  --targets List.txt  replace  #批量正则替换
 python3 RegEx_Replace_v1.0.2.py  --target Test.txt  uniq  #单个去重
